@@ -1,0 +1,6 @@
+
+# Must be set in config.txt for service to be enabled.
+PROXY_URL_REQUEST_PASSWORD = ""
+
+#URL of proxy server including the /proxy_url bit
+PROXY_URL = "https://ezproxy.edu/proxy_url"
