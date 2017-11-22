@@ -1,0 +1,7 @@
+#!/bin/bash
+rm pcs_*, good.txt, bad.txt
+split urls.txt pcs_
+for f in pcs_*; do
+	python3 ebc.py $f
+done
+rm pcs_*

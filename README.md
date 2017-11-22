@@ -10,7 +10,10 @@ When provided with a `txt` file of urls it will check the `/proxy_url` service t
 
 1. `urls.txt`in the directory.
 
-1. `python3 ebc.py` results in `good.txt` and `bad.txt`
+1. The bash script `run_check` breaks input file into 1000 line chunks and then pushes it through the checker. Runs minimum sanity check to mark sure URL strings are _utf-8_
 
+1. `good.txt` are URLs that validate, `bad.txt` are ones that need addition
+
+1. Just in case run `python3 dedupe.py` to clean up the output files
 
 X-X-Xml yall!
